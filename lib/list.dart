@@ -1,10 +1,12 @@
 import 'package:carrinho_de_compras/projeto/index.dart';
+import 'package:carrinho_de_compras/widgets/Orientation_builder.dart';
 import 'package:carrinho_de_compras/widgets/aligment.dart';
 import 'package:carrinho_de_compras/widgets/column.dart';
 import 'package:carrinho_de_compras/widgets/column_row.dart';
 import 'package:carrinho_de_compras/widgets/container.dart';
 import 'package:carrinho_de_compras/widgets/grid_view.dart';
 import 'package:carrinho_de_compras/widgets/list_view.dart';
+import 'package:carrinho_de_compras/widgets/media_query.dart';
 import 'package:carrinho_de_compras/widgets/positned.dart';
 import 'package:carrinho_de_compras/widgets/row.dart';
 import 'package:carrinho_de_compras/widgets/stack.dart';
@@ -69,35 +71,49 @@ class ListMenu{
           MaterialPageRoute(builder: (ctx)=> ListViewView()),
         );
         }, 
-        child: Text("List view"),
+        child: Text("List"),
       ),
       TextButton(onPressed: (){
         Navigator.of(context).push(
           MaterialPageRoute(builder: (ctx)=> WrapView()),
         );
         }, 
-        child: Text("Wrap view"),
+        child: Text("Wrap"),
       ),
       TextButton(onPressed: (){
         Navigator.of(context).push(
           MaterialPageRoute(builder: (ctx)=> GridViewView()),
         );
         }, 
-        child: Text("Grid View"),
+        child: Text("Grid"),
       ),
       TextButton(onPressed: (){
         Navigator.of(context).push(
           MaterialPageRoute(builder: (ctx)=> StackView()),
         );
         }, 
-        child: Text("Stack View"),
+        child: Text("Stack"),
       ),
       TextButton(onPressed: (){
         Navigator.of(context).push(
           MaterialPageRoute(builder: (ctx)=> PositinedView()),
         );
         }, 
-        child: Text("positned View"),
+        child: Text("positned"),
+      ),
+      TextButton(onPressed: (){
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (ctx)=> OrientationBuilderView()),
+        );
+        }, 
+        child: Text("Orientation"),
+      ),
+      TextButton(onPressed: (){
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (ctx)=> MediaQueryView()),
+        );
+        }, 
+        child: Text("Media Query"),
       ),
     ];
   }
