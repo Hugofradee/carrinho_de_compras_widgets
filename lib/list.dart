@@ -4,7 +4,9 @@ import 'package:carrinho_de_compras/widgets/aligment.dart';
 import 'package:carrinho_de_compras/widgets/column.dart';
 import 'package:carrinho_de_compras/widgets/column_row.dart';
 import 'package:carrinho_de_compras/widgets/container.dart';
+import 'package:carrinho_de_compras/widgets/expanded_flexible.dart';
 import 'package:carrinho_de_compras/widgets/grid_view.dart';
+import 'package:carrinho_de_compras/widgets/layout_builder.dart';
 import 'package:carrinho_de_compras/widgets/list_view.dart';
 import 'package:carrinho_de_compras/widgets/media_query.dart';
 import 'package:carrinho_de_compras/widgets/positned.dart';
@@ -114,6 +116,20 @@ class ListMenu{
         );
         }, 
         child: Text("Media Query"),
+      ),
+      TextButton(onPressed: (){
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (ctx)=> LayoutBuilderView()),
+        );
+        }, 
+        child: Text("Layout Builder"),
+      ),
+      TextButton(onPressed: (){
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (ctx)=> ExpandedFlexibleView()),
+        );
+        }, 
+        child: Text("Expanded Flexible"),
       ),
     ];
   }
